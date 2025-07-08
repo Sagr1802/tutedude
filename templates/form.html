@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width" />
+    <title>Submit Form</title>
+  </head>
+  <body>
+    <h2>Submit Data</h2>
+
+    {% if error %}
+      <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+      Name: <input type="text" name="name" required /><br /><br />
+      Age: <input type="number" name="age" required /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
