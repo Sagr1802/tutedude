@@ -55,7 +55,7 @@ def form():
 def success():
     return render_template('success.html')
 
-# ✅ NEW Route 4: Submit To-Do item via JSON API
+#  NEW Route 4: Submit To-Do item via JSON API
 @app.route('/submittodoitem', methods=['POST'])
 def submit_todo_item():
     try:
